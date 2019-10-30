@@ -103,6 +103,13 @@ function createPanel(info) {
   article.appendChild(par2);
   article.appendChild(par3);
   article.appendChild(expandButton);
+  // set the content
+  title.textContent = info.title;
+  date.textContent = info.date;
+  par1.textContent = info.firstParagraph;
+  par2.textContent = info.secondParagraph;
+  par3.textContent = info.thirdParagraph;
+  expandButton.textContent = 'button';
 }
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
   
