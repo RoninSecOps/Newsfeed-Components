@@ -122,6 +122,10 @@ function createPanel(info) {
 
   return article;
 }
+const articles = document.querySelector('.articles');
+data.forEach(function(data) {
+  articles.appendChild(createPanel(data));
+});
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
   
   <div class="article">
