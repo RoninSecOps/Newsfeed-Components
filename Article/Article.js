@@ -110,6 +110,17 @@ function createPanel(info) {
   par2.textContent = info.secondParagraph;
   par3.textContent = info.thirdParagraph;
   expandButton.textContent = 'button';
+  // apply style
+  article.classList.add('article');
+  title.classList.add('h2');
+  date.classList.add('date');
+  expandButton.classList.add('expandButton');
+  //create any event handlers
+  expandButton.addEventListener('click', function() {
+    article.classList.toggle('article-open');
+  });
+
+  return article;
 }
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
   
